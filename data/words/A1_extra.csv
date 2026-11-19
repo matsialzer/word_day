@@ -1,0 +1,118 @@
+word,transcription,translation_ru,translation_uz,example,theme,level,freq_rank,audio_file
+goodbye,/ɡʊdˈbaɪ/,до свидания,xayr,"Goodbye, see you tomorrow.",basic,A1,13,goodbye.mp3
+please,/pliːz/,пожалуйста,iltimos,Please sit down.,basic,A1,14,please.mp3
+thanks,/θæŋks/,спасибо,rahmat,Thanks for your help.,basic,A1,15,thanks.mp3
+yes,/jes/,да,ha,"Yes, I like it.",basic,A1,16,yes.mp3
+no,/nəʊ/,нет,yo'q,"No, I don't want tea.",basic,A1,17,no.mp3
+man,/mæn/,мужчина,erkak,The man is tall.,family,A1,18,man.mp3
+woman,/ˈwʊmən/,женщина,ayol,The woman is a teacher.,family,A1,19,woman.mp3
+boy,/bɔɪ/,мальчик,o'g'il bola,The boy plays football.,family,A1,20,boy.mp3
+girl,/ɡɜːl/,девочка,qiz bola,The girl has a red bag.,family,A1,21,girl.mp3
+mother,/ˈmʌðə/,мать,ona,My mother cooks dinner.,family,A1,22,mother.mp3
+father,/ˈfɑːðə/,отец,ota,My father is a driver.,family,A1,23,father.mp3
+brother,/ˈbrʌðə/,брат,aka-uka,My brother is ten years old.,family,A1,24,brother.mp3
+sister,/ˈsɪstə/,сестра,opa-singil,My sister likes music.,family,A1,25,sister.mp3
+baby,/ˈbeɪbi/,малыш,chaqaloq,The baby is sleeping.,family,A1,26,baby.mp3
+child,/tʃaɪld/,ребёнок,bola,The child is happy.,family,A1,27,child.mp3
+people,/ˈpiːpl/,люди,odamlar,Many people live here.,family,A1,28,people.mp3
+name,/neɪm/,имя,ism,What is your name?,basic,A1,29,name.mp3
+age,/eɪdʒ/,возраст,yosh,What is your age?,basic,A1,30,age.mp3
+bread,/bred/,хлеб,non,I buy bread every morning.,food,A1,31,bread.mp3
+milk,/mɪlk/,молоко,sut,She drinks milk for breakfast.,food,A1,32,milk.mp3
+egg,/eɡ/,яйцо,tuxum,I eat an egg for breakfast.,food,A1,33,egg.mp3
+rice,/raɪs/,рис,guruch,We eat rice for lunch.,food,A1,34,rice.mp3
+meat,/miːt/,мясо,go'sht,He does not eat meat.,food,A1,35,meat.mp3
+fish,/fɪʃ/,рыба,baliq,We have fish for dinner.,food,A1,36,fish.mp3
+apple,/ˈæpl/,яблоко,olma,The apple is sweet.,food,A1,37,apple.mp3
+banana,/bəˈnɑːnə/,банан,banan,Monkeys like a banana.,food,A1,38,banana.mp3
+orange,/ˈɒrɪndʒ/,апельсин,apelsin,I drink orange juice.,food,A1,39,orange.mp3
+tea,/tiː/,чай,choy,Would you like some tea?,food,A1,40,tea.mp3
+coffee,/ˈkɒfi/,кофе,qahva,He drinks coffee in the morning.,food,A1,41,coffee.mp3
+sugar,/ˈʃʊɡə/,сахар,shakar,I take sugar in my tea.,food,A1,42,sugar.mp3
+salt,/sɔːlt/,соль,tuz,"Add some salt, please.",food,A1,43,salt.mp3
+soup,/suːp/,суп,sho'rva,The soup is hot.,food,A1,44,soup.mp3
+cheese,/tʃiːz/,сыр,pishloq,I like cheese sandwiches.,food,A1,45,cheese.mp3
+drink,/drɪŋk/,пить,ichmoq,I drink water every day.,food,A1,46,drink.mp3
+cook,/kʊk/,готовить,pishirmoq,I like to cook with my mother.,food,A1,47,cook.mp3
+room,/ruːm/,комната,xona,My room is small.,home,A1,48,room.mp3
+door,/dɔː/,дверь,eshik,"Close the door, please.",home,A1,49,door.mp3
+window,/ˈwɪndəʊ/,окно,deraza,Open the window.,home,A1,50,window.mp3
+table,/ˈteɪbl/,стол,stol,The book is on the table.,home,A1,51,table.mp3
+chair,/tʃeə/,стул,stul,Sit on the chair.,home,A1,52,chair.mp3
+bed,/bed/,кровать,karavot,The bed is comfortable.,home,A1,53,bed.mp3
+garden,/ˈɡɑːdn/,сад,bog',We have a small garden.,home,A1,54,garden.mp3
+street,/striːt/,улица,ko'cha,The street is busy.,travel,A1,55,street.mp3
+city,/ˈsɪti/,город,shahar,Tashkent is a big city.,travel,A1,56,city.mp3
+town,/taʊn/,городок,shaharcha,I live in a small town.,travel,A1,57,town.mp3
+car,/kɑː/,машина,mashina,My father has a new car.,travel,A1,58,car.mp3
+bus,/bʌs/,автобус,avtobus,I go to school by bus.,travel,A1,59,bus.mp3
+train,/treɪn/,поезд,poyezd,The train is late.,travel,A1,60,train.mp3
+bike,/baɪk/,велосипед,velosiped,He rides a bike.,travel,A1,61,bike.mp3
+shop,/ʃɒp/,магазин,do'kon,The shop opens at nine.,travel,A1,62,shop.mp3
+market,/ˈmɑːkɪt/,рынок,bozor,We buy fruit at the market.,travel,A1,63,market.mp3
+go,/ɡəʊ/,идти,bormoq,I go to work at eight.,travel,A1,64,go.mp3
+come,/kʌm/,приходить,kelmoq,Please come here.,travel,A1,65,come.mp3
+walk,/wɔːk/,ходить пешком,piyoda yurmoq,I walk to school.,travel,A1,66,walk.mp3
+run,/rʌn/,бегать,yugurmoq,I run every morning.,health,A1,67,run.mp3
+sleep,/sliːp/,спать,uxlamoq,I sleep eight hours every night.,health,A1,68,sleep.mp3
+head,/hed/,голова,bosh,My head hurts.,health,A1,69,head.mp3
+eye,/aɪ/,глаз,ko'z,Her eye is red from crying.,health,A1,70,eye.mp3
+hand,/hænd/,рука (кисть),qo'l,Wash your hand with soap.,health,A1,71,hand.mp3
+foot,/fʊt/,нога (стопа),oyoq,My foot hurts.,health,A1,72,foot.mp3
+mouth,/maʊθ/,рот,og'iz,Open your mouth.,health,A1,73,mouth.mp3
+nose,/nəʊz/,нос,burun,He has a big nose.,health,A1,74,nose.mp3
+hair,/heə/,волосы,soch,She has long hair.,health,A1,75,hair.mp3
+doctor,/ˈdɒktə/,врач,shifokor,The doctor is kind.,health,A1,76,doctor.mp3
+sick,/sɪk/,больной,kasal,I am sick today.,health,A1,77,sick.mp3
+sun,/sʌn/,солнце,quyosh,The sun is hot.,nature,A1,78,sun.mp3
+moon,/muːn/,луна,oy,The moon is bright tonight.,nature,A1,79,moon.mp3
+tree,/triː/,дерево,daraxt,There is a tree in the garden.,nature,A1,80,tree.mp3
+flower,/ˈflaʊə/,цветок,gul,She gives me a flower.,nature,A1,81,flower.mp3
+dog,/dɒɡ/,собака,it,The dog is friendly.,nature,A1,82,dog.mp3
+bird,/bɜːd/,птица,qush,A bird sings in the tree.,nature,A1,83,bird.mp3
+horse,/hɔːs/,лошадь,ot,The horse runs fast.,nature,A1,84,horse.mp3
+rain,/reɪn/,дождь,yomg'ir,I like the rain.,nature,A1,85,rain.mp3
+snow,/snəʊ/,снег,qor,Children play in the snow.,nature,A1,86,snow.mp3
+river,/ˈrɪvə/,река,daryo,The river is long.,nature,A1,87,river.mp3
+mountain,/ˈmaʊntən/,гора,tog',We climb the mountain.,nature,A1,88,mountain.mp3
+sea,/siː/,море,dengiz,The sea is blue.,nature,A1,89,sea.mp3
+hot,/hɒt/,горячий,issiq,The tea is hot.,basic,A1,90,hot.mp3
+cold,/kəʊld/,холодный,sovuq,The water is cold.,basic,A1,91,cold.mp3
+small,/smɔːl/,маленький,kichik,I have a small bag.,basic,A1,92,small.mp3
+long,/lɒŋ/,длинный,uzun,The road is long.,basic,A1,93,long.mp3
+new,/njuː/,новый,yangi,I have a new phone.,basic,A1,94,new.mp3
+old,/əʊld/,старый,eski,This is an old book.,basic,A1,95,old.mp3
+good,/ɡʊd/,хороший,yaxshi,This is a good idea.,basic,A1,96,good.mp3
+bad,/bæd/,плохой,yomon,The weather is bad.,basic,A1,97,bad.mp3
+happy,/ˈhæpi/,счастливый,baxtli,I am happy today.,basic,A1,98,happy.mp3
+sad,/sæd/,грустный,xafa,She is sad.,basic,A1,99,sad.mp3
+fast,/fɑːst/,быстрый,tez,The car is fast.,basic,A1,100,fast.mp3
+slow,/sləʊ/,медленный,sekin,The bus is slow.,basic,A1,101,slow.mp3
+easy,/ˈiːzi/,лёгкий,oson,The test is easy.,education,A1,102,easy.mp3
+hard,/hɑːd/,трудный,qiyin,The exam is hard.,education,A1,103,hard.mp3
+blue,/bluː/,синий,ko'k,The sky is blue.,basic,A1,104,blue.mp3
+green,/ɡriːn/,зелёный,yashil,The grass is green.,basic,A1,105,green.mp3
+yellow,/ˈjeləʊ/,жёлтый,sariq,He has a yellow shirt.,basic,A1,106,yellow.mp3
+black,/blæk/,чёрный,qora,I have a black cat.,basic,A1,107,black.mp3
+white,/waɪt/,белый,oq,Snow is white.,basic,A1,108,white.mp3
+one,/wʌn/,один,bir,I have one brother.,basic,A1,109,one.mp3
+two,/tuː/,два,ikki,She has two cats.,basic,A1,110,two.mp3
+three,/θriː/,три,uch,There are three books.,basic,A1,111,three.mp3
+four,/fɔː/,четыре,to'rt,We have four chairs.,basic,A1,112,four.mp3
+five,/faɪv/,пять,besh,I wait five minutes.,basic,A1,113,five.mp3
+ten,/ten/,десять,o'n,I have ten fingers.,basic,A1,114,ten.mp3
+teacher,/ˈtiːtʃə/,учитель,o'qituvchi,My teacher is very kind.,education,A1,115,teacher.mp3
+student,/ˈstjuːdnt/,студент,talaba,He is a good student.,education,A1,116,student.mp3
+pen,/pen/,ручка,ruchka,I need a pen.,education,A1,117,pen.mp3
+read,/riːd/,читать,o'qimoq,I read a book every week.,education,A1,118,read.mp3
+write,/raɪt/,писать,yozmoq,Write your name here.,education,A1,119,write.mp3
+learn,/lɜːn/,учиться,o'rganmoq,We learn English at school.,education,A1,120,learn.mp3
+play,/pleɪ/,играть,o'ynamoq,Children play in the park.,education,A1,121,play.mp3
+work,/wɜːk/,работать,ishlamoq,I work in a bank.,education,A1,122,work.mp3
+like,/laɪk/,нравиться,yoqtirmoq,I like this song.,basic,A1,123,like.mp3
+love,/lʌv/,любить,sevmoq,I love my country.,family,A1,124,love.mp3
+want,/wɒnt/,хотеть,xohlamoq,I want some water.,basic,A1,125,want.mp3
+have,/hæv/,иметь,ega bo'lmoq,I have a big family.,basic,A1,126,have.mp3
+see,/siː/,видеть,ko'rmoq,I can see a bird.,basic,A1,127,see.mp3
+know,/nəʊ/,знать,bilmoq,I know his name.,basic,A1,128,know.mp3
+help,/help/,помогать,yordam bermoq,Can you help me?,basic,A1,129,help.mp3

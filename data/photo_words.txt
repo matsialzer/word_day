@@ -1,0 +1,107 @@
+# Слова, которым нужны фото (scripts/fetch_photos.py). Только то, что однозначно видно на фото:
+# по нему строится вопрос «Что на картинке?». Абстрактные слова, прилагательные, числа и
+# родственники (uncle/wife - на фото просто человек) сюда не входят.
+# Одно слово на строку; добавили слово - запустите скрипт снова.
+# Фото не то - уточните поиск: «salt = salt shaker», удалите data/images/salt.jpg и запустите
+# скрипт (или: python scripts/fetch_photos.py --word salt).
+
+# люди и профессии
+man
+woman
+girl
+baby
+family
+teacher = teacher classroom blackboard
+student
+doctor
+pilot = airline pilot
+
+# еда и напитки
+water
+bread
+milk
+egg
+rice
+meat
+fish
+apple
+banana = yellow bananas
+orange
+tea
+coffee
+soup
+cheese = cheese wedge
+fruit
+potato
+tomato
+chicken = hen
+breakfast
+
+# дом и вещи
+house
+book
+window
+chair
+bed
+kitchen
+bathroom
+wall
+key
+apartment = apartment living room
+pen
+gift
+medicine
+money
+camera
+suitcase
+passport
+ticket
+map
+menu = restaurant menu card
+shirt = shirt on hanger
+shoes
+
+# город и транспорт
+school = school building
+street
+city
+car
+bus
+train
+bike
+shop
+market
+airport
+station
+hotel
+restaurant
+library
+bridge
+village
+party = birthday party
+crowd
+
+# тело
+eye
+hand
+foot
+mouth
+hair
+arm = human arm muscle
+leg
+tooth
+
+# природа и животные
+cat
+dog
+bird
+horse
+sun
+moon
+tree
+flower
+snow
+river
+mountain
+sea
+beach

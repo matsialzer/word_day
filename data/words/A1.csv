@@ -1,0 +1,13 @@
+word,transcription,translation_ru,translation_uz,example,theme,level,freq_rank,audio_file
+hello,/həˈləʊ/,привет,salom,"Hello, how are you?",basic,A1,1,hello.mp3
+water,/ˈwɔːtə/,вода,suv,I drink water every day.,food,A1,2,water.mp3
+house,/haʊs/,дом,uy,This is my house.,home,A1,3,house.mp3
+book,/bʊk/,книга,kitob,She is reading a book.,education,A1,4,book.mp3
+friend,/frend/,друг,do'st,He is my best friend.,family,A1,5,friend.mp3
+family,/ˈfæməli/,семья,oila,I love my family.,family,A1,6,family.mp3
+school,/skuːl/,школа,maktab,The school is near my house.,education,A1,7,school.mp3
+eat,/iːt/,есть (кушать),yemoq,We eat breakfast at eight.,food,A1,8,eat.mp3
+big,/bɪɡ/,большой,katta,They have a big garden.,basic,A1,9,big.mp3
+red,/red/,красный,qizil,She wears a red dress.,basic,A1,10,red.mp3
+cat,/kæt/,кошка,mushuk,The cat sleeps on the sofa.,nature,A1,11,cat.mp3
+day,/deɪ/,день,kun,Have a nice day!,basic,A1,12,day.mp3

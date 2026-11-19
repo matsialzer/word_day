@@ -1,0 +1,120 @@
+word,transcription,translation_ru,translation_uz,example,theme,level,freq_rank,audio_file
+breakfast,/ˈbrekfəst/,завтрак,nonushta,I have breakfast at seven.,food,A2,11,breakfast.mp3
+lunch,/lʌntʃ/,обед,tushlik,We have lunch at school.,food,A2,12,lunch.mp3
+dinner,/ˈdɪnə/,ужин,kechki ovqat,Dinner is ready.,food,A2,13,dinner.mp3
+vegetable,/ˈvedʒtəbl/,овощ,sabzavot,Eat more vegetable every day.,food,A2,14,vegetable.mp3
+fruit,/fruːt/,фрукт,meva,Fruit is good for you.,food,A2,15,fruit.mp3
+potato,/pəˈteɪtəʊ/,картофель,kartoshka,I like fried potato.,food,A2,16,potato.mp3
+tomato,/təˈmɑːtəʊ/,помидор,pomidor,Add a tomato to the salad.,food,A2,17,tomato.mp3
+chicken,/ˈtʃɪkɪn/,курица,tovuq,We cook chicken for dinner.,food,A2,18,chicken.mp3
+restaurant,/ˈrestrɒnt/,ресторан,restoran,We eat at a restaurant on Friday.,food,A2,19,restaurant.mp3
+menu,/ˈmenjuː/,меню,menyu,Can I see the menu?,food,A2,20,menu.mp3
+hungry,/ˈhʌŋɡri/,голодный,och,I am very hungry.,food,A2,21,hungry.mp3
+thirsty,/ˈθɜːsti/,испытывающий жажду,chanqoq,After running I am thirsty.,food,A2,22,thirsty.mp3
+delicious,/dɪˈlɪʃəs/,вкусный,mazali,This cake is delicious.,food,A2,23,delicious.mp3
+bedroom,/ˈbedruːm/,спальня,yotoqxona,My bedroom is upstairs.,home,A2,24,bedroom.mp3
+bathroom,/ˈbɑːθruːm/,ванная,hammom,The bathroom is on the left.,home,A2,25,bathroom.mp3
+floor,/flɔː/,пол,pol,The floor is clean.,home,A2,26,floor.mp3
+wall,/wɔːl/,стена,devor,There is a picture on the wall.,home,A2,27,wall.mp3
+roof,/ruːf/,крыша,tom,The roof is red.,home,A2,28,roof.mp3
+key,/kiː/,ключ,kalit,I lost my key.,home,A2,29,key.mp3
+furniture,/ˈfɜːnɪtʃə/,мебель,mebel,We need new furniture.,home,A2,30,furniture.mp3
+apartment,/əˈpɑːtmənt/,квартира,kvartira,They live in a small apartment.,home,A2,31,apartment.mp3
+neighbor,/ˈneɪbə/,сосед,qo'shni,My neighbor is friendly.,home,A2,32,neighbor.mp3
+clean,/kliːn/,чистый,toza,Keep your room clean.,home,A2,33,clean.mp3
+dirty,/ˈdɜːti/,грязный,iflos,Your shoes are dirty.,home,A2,34,dirty.mp3
+station,/ˈsteɪʃn/,станция,bekat,The station is near here.,travel,A2,35,station.mp3
+ticket,/ˈtɪkɪt/,билет,chipta,I bought a ticket online.,travel,A2,36,ticket.mp3
+passport,/ˈpɑːspɔːt/,паспорт,pasport,Don't forget your passport.,travel,A2,37,passport.mp3
+hotel,/həʊˈtel/,гостиница,mehmonxona,The hotel is near the beach.,travel,A2,38,hotel.mp3
+map,/mæp/,карта,xarita,Look at the map.,travel,A2,39,map.mp3
+bridge,/brɪdʒ/,мост,ko'prik,We cross the bridge.,travel,A2,40,bridge.mp3
+village,/ˈvɪlɪdʒ/,деревня,qishloq,My grandmother lives in a village.,travel,A2,41,village.mp3
+country,/ˈkʌntri/,страна,mamlakat,Uzbekistan is a beautiful country.,travel,A2,42,country.mp3
+trip,/trɪp/,поездка,sayohat,We had a short trip.,travel,A2,43,trip.mp3
+holiday,/ˈhɒlədeɪ/,праздник,bayram,Navruz is a spring holiday.,travel,A2,44,holiday.mp3
+visit,/ˈvɪzɪt/,посещать,tashrif buyurmoq,We visit our grandparents on Sunday.,travel,A2,45,visit.mp3
+arrive,/əˈraɪv/,прибывать,yetib kelmoq,The train will arrive soon.,travel,A2,46,arrive.mp3
+leave,/liːv/,уходить,ketmoq,I leave home at eight.,travel,A2,47,leave.mp3
+drive,/draɪv/,водить машину,haydamoq,My father can drive.,travel,A2,48,drive.mp3
+turn,/tɜːn/,поворачивать,burilmoq,Turn left at the corner.,travel,A2,49,turn.mp3
+stop,/stɒp/,останавливаться,to'xtamoq,Please stop here.,travel,A2,50,stop.mp3
+lost,/lɒst/,потерянный,adashgan,I am lost in the city.,travel,A2,51,lost.mp3
+near,/nɪə/,близко,yaqin,My school is near.,travel,A2,52,near.mp3
+far,/fɑː/,далеко,uzoq,The market is far from here.,travel,A2,53,far.mp3
+grandmother,/ˈɡrænmʌðə/,бабушка,buvi,My grandmother tells stories.,family,A2,54,grandmother.mp3
+grandfather,/ˈɡrænfɑːðə/,дедушка,bobo,My grandfather is eighty.,family,A2,55,grandfather.mp3
+uncle,/ˈʌŋkl/,дядя,amaki,My uncle lives in Samarkand.,family,A2,56,uncle.mp3
+aunt,/ɑːnt/,тётя,xola,My aunt is a nurse.,family,A2,57,aunt.mp3
+cousin,/ˈkʌzn/,двоюродный брат,amakivachcha,My cousin visits us in summer.,family,A2,58,cousin.mp3
+husband,/ˈhʌzbənd/,муж,er,Her husband is a driver.,family,A2,59,husband.mp3
+wife,/waɪf/,жена,xotin,His wife is a doctor.,family,A2,60,wife.mp3
+parents,/ˈpeərənts/,родители,ota-ona,My parents are at home.,family,A2,61,parents.mp3
+married,/ˈmærid/,женатый,turmush qurgan,They are married.,family,A2,62,married.mp3
+birthday,/ˈbɜːθdeɪ/,день рождения,tug'ilgan kun,Today is my birthday.,family,A2,63,birthday.mp3
+party,/ˈpɑːti/,вечеринка,bazm,We have a party tonight.,family,A2,64,party.mp3
+gift,/ɡɪft/,подарок,sovg'a,This gift is for you.,family,A2,65,gift.mp3
+smile,/smaɪl/,улыбаться,jilmaymoq,Please smile for the photo.,family,A2,66,smile.mp3
+laugh,/lɑːf/,смеяться,kulmoq,We laugh a lot together.,family,A2,67,laugh.mp3
+cry,/kraɪ/,плакать,yig'lamoq,The baby will cry.,family,A2,68,cry.mp3
+angry,/ˈæŋɡri/,злой,jahldor,He is angry today.,family,A2,69,angry.mp3
+medicine,/ˈmedsn/,лекарство,dori,Take this medicine twice a day.,health,A2,70,medicine.mp3
+hospital,/ˈhɒspɪtl/,больница,kasalxona,He is in the hospital.,health,A2,71,hospital.mp3
+pain,/peɪn/,боль,og'riq,I have a pain in my back.,health,A2,72,pain.mp3
+headache,/ˈhedeɪk/,головная боль,bosh og'rig'i,I have a headache.,health,A2,73,headache.mp3
+fever,/ˈfiːvə/,температура,isitma,She has a fever.,health,A2,74,fever.mp3
+cough,/kɒf/,кашель,yo'tal,I have a bad cough.,health,A2,75,cough.mp3
+body,/ˈbɒdi/,тело,tana,Exercise is good for the body.,health,A2,76,body.mp3
+arm,/ɑːm/,рука (от плеча),qo'l,I hurt my arm.,health,A2,77,arm.mp3
+leg,/leɡ/,нога,oyoq,His leg is broken.,health,A2,78,leg.mp3
+back,/bæk/,спина,orqa,My back hurts.,health,A2,79,back.mp3
+face,/feɪs/,лицо,yuz,Wash your face.,health,A2,80,face.mp3
+tooth,/tuːθ/,зуб,tish,I have a pain in my tooth.,health,A2,81,tooth.mp3
+exercise,/ˈeksəsaɪz/,упражнение,mashq,I do exercise every morning.,health,A2,82,exercise.mp3
+rest,/rest/,отдых,dam olish,You need some rest.,health,A2,83,rest.mp3
+weekend,/ˈwiːkend/,выходные,dam olish kunlari,We relax at the weekend.,basic,A2,84,weekend.mp3
+morning,/ˈmɔːnɪŋ/,утро,ertalab,I drink tea in the morning.,basic,A2,85,morning.mp3
+evening,/ˈiːvnɪŋ/,вечер,kech,We walk in the evening.,basic,A2,86,evening.mp3
+night,/naɪt/,ночь,tun,It is dark at night.,basic,A2,87,night.mp3
+week,/wiːk/,неделя,hafta,I study every week.,basic,A2,88,week.mp3
+month,/mʌnθ/,месяц,oy,One month has about thirty days.,basic,A2,89,month.mp3
+year,/jɪə/,год,yil,This year I start school.,basic,A2,90,year.mp3
+time,/taɪm/,время,vaqt,What time is it?,basic,A2,91,time.mp3
+today,/təˈdeɪ/,сегодня,bugun,Today is Monday.,basic,A2,92,today.mp3
+tomorrow,/təˈmɒrəʊ/,завтра,ertaga,See you tomorrow.,basic,A2,93,tomorrow.mp3
+yesterday,/ˈjestədeɪ/,вчера,kecha,I was at home yesterday.,basic,A2,94,yesterday.mp3
+always,/ˈɔːlweɪz/,всегда,doim,She always smiles.,basic,A2,95,always.mp3
+never,/ˈnevə/,никогда,hech qachon,I never drink coffee at night.,basic,A2,96,never.mp3
+sometimes,/ˈsʌmtaɪmz/,иногда,ba'zan,Sometimes we play chess.,basic,A2,97,sometimes.mp3
+often,/ˈɒfn/,часто,tez-tez,I often read at night.,basic,A2,98,often.mp3
+usually,/ˈjuːʒuəli/,обычно,odatda,I usually wake up at six.,basic,A2,99,usually.mp3
+wait,/weɪt/,ждать,kutmoq,Please wait here.,basic,A2,100,wait.mp3
+ask,/ɑːsk/,спрашивать,so'ramoq,Ask your teacher.,education,A2,101,ask.mp3
+answer,/ˈɑːnsə/,ответ,javob,Write the answer here.,education,A2,102,answer.mp3
+question,/ˈkwestʃən/,вопрос,savol,I have a question.,education,A2,103,question.mp3
+lesson,/ˈlesn/,урок,dars,The lesson starts at nine.,education,A2,104,lesson.mp3
+homework,/ˈhəʊmwɜːk/,домашнее задание,uy vazifasi,I do my homework after school.,education,A2,105,homework.mp3
+test,/test/,тест,test,We have a test on Friday.,education,A2,106,test.mp3
+word,/wɜːd/,слово,so'z,Learn a new word every day.,education,A2,107,word.mp3
+sentence,/ˈsentəns/,предложение,gap,Read this sentence aloud.,education,A2,108,sentence.mp3
+language,/ˈlæŋɡwɪdʒ/,язык,til,English is a useful language.,education,A2,109,language.mp3
+class,/klɑːs/,класс,sinf,Our class has twenty students.,education,A2,110,class.mp3
+library,/ˈlaɪbrəri/,библиотека,kutubxona,I study in the library.,education,A2,111,library.mp3
+paper,/ˈpeɪpə/,бумага,qog'oz,I need a sheet of paper.,education,A2,112,paper.mp3
+understand,/ˌʌndəˈstænd/,понимать,tushunmoq,I understand the lesson.,education,A2,113,understand.mp3
+remember,/rɪˈmembə/,помнить,eslamoq,I remember your name.,education,A2,114,remember.mp3
+spell,/spel/,произносить по буквам,harflab aytmoq,How do you spell this word?,education,A2,115,spell.mp3
+clothes,/kləʊðz/,одежда,kiyim,I need new clothes.,basic,A2,116,clothes.mp3
+shirt,/ʃɜːt/,рубашка,ko'ylak,He wears a white shirt.,basic,A2,117,shirt.mp3
+shoes,/ʃuːz/,обувь,poyabzal,My shoes are new.,basic,A2,118,shoes.mp3
+hat,/hæt/,шапка,shapka,She wears a warm hat.,basic,A2,119,hat.mp3
+money,/ˈmʌni/,деньги,pul,I have no money.,basic,A2,120,money.mp3
+price,/praɪs/,цена,narx,The price is low.,basic,A2,121,price.mp3
+cheap,/tʃiːp/,дешёвый,arzon,This bag is cheap.,basic,A2,122,cheap.mp3
+expensive,/ɪkˈspensɪv/,дорогой,qimmat,The phone is expensive.,basic,A2,123,expensive.mp3
+buy,/baɪ/,покупать,sotib olmoq,I want to buy a book.,basic,A2,124,buy.mp3
+sell,/sel/,продавать,sotmoq,They sell fresh bread.,basic,A2,125,sell.mp3
+pilot,/ˈpaɪlət/,пилот,uchuvchi,The pilot is very experienced.,travel,A2,126,pilot.mp3
+beach,/biːtʃ/,пляж,plyaj,We walk on the beach.,travel,A2,127,beach.mp3
+camera,/ˈkæmərə/,фотоаппарат,kamera,I take photos with my camera.,travel,A2,128,camera.mp3
+suitcase,/ˈsuːtkeɪs/,чемодан,chemodan,My suitcase is heavy.,travel,A2,129,suitcase.mp3

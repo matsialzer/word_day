@@ -1,0 +1,57 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: worddays
+      POSTGRES_PASSWORD: worddays
+      POSTGRES_DB: worddays
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U worddays"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redisdata:/data
+
+  bot:
+    build: .
+    env_file: .env
+    environment:
+      # внутри compose база и Redis доступны по именам сервисов
+      DATABASE_URL: postgresql+asyncpg://worddays:worddays@db:5432/worddays
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+
+  web:
+    build: .
+    command: ["python", "-m", "worddays.web"]
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://worddays:worddays@db:5432/worddays
+      WEB_HOST: 0.0.0.0  # внутри контейнера; наружу порт открыт только на localhost (см. ports)
+    ports:
+      - "127.0.0.1:8000:8000"  # в интернет - только через HTTPS-прокси (nginx/Caddy)
+    depends_on:
+      db:
+        condition: service_healthy
+      bot:
+        condition: service_started  # бот применяет миграции при старте
+    volumes:
+      - ./data:/app/data  # общая папка озвучки с ботом
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  redisdata:
