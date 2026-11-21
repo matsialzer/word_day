@@ -92,3 +92,19 @@ class WeeklyTest(Base):
     completed: Mapped[bool] = mapped_column(Boolean, default=False)
     passed: Mapped[bool] = mapped_column(Boolean, default=False)
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+
+class DailyExam(Base):
+    """Ежедневный экзамен: одна попытка в сутки (по локальной дате пользователя)."""
+
+    __tablename__ = "daily_exams"
+    __table_args__ = (UniqueConstraint("user_id", "date"),)
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
+    date: Mapped[date_] = mapped_column(Date)
+    total: Mapped[int] = mapped_column(Integer)
+    correct: Mapped[int] = mapped_column(Integer, default=0)
+    completed: Mapped[bool] = mapped_column(Boolean, default=False)
+    passed: Mapped[bool] = mapped_column(Boolean, default=False)
+    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

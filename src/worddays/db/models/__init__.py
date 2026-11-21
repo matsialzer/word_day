@@ -9,11 +9,18 @@ from worddays.db.models.enums import (
     QuizFormat,
     WordStatus,
 )
-from worddays.db.models.progress import Achievement, DailySet, QuizLog, UserWord, WeeklyTest
+from worddays.db.models.progress import (
+    Achievement,
+    DailyExam,
+    DailySet,
+    QuizLog,
+    UserWord,
+    WeeklyTest,
+)
 from worddays.db.models.user import User
 from worddays.db.models.word import Word
 
 __all__ = [
-    "Achievement", "AppSetting", "Bonus", "BonusReason", "BonusStatus", "DailySet", "Language", "Level",
+    "Achievement", "AppSetting", "Bonus", "BonusReason", "BonusStatus", "DailyExam", "DailySet", "Language", "Level",
     "QuizFormat", "QuizLog", "User", "UserWord", "WeeklyTest", "Word", "WordStatus",
 ]

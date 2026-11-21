@@ -11,6 +11,11 @@ TEST_PASS_PCT = 70  # доля верных в недельном тесте
 WEEKLY_TEST_LENGTH = 10
 WEEKLY_TEST_MIN_WORDS = 5  # меньше слов за неделю - тест не предлагается
 
+# Ежедневный экзамен
+DAILY_EXAM_LENGTH = 10
+DAILY_EXAM_MIN_WORDS = 5  # меньше доступных слов - экзамен не предлагается
+DAILY_EXAM_PASS_XP = 30  # награда за сданный экзамен
+
 MAX_TOP_N = 5
 
 

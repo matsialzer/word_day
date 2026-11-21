@@ -216,6 +216,29 @@ TEXTS: dict[str, dict[str, str]] = {
         "ru": "❌ Тест не сдан: {ok}/{n}. Новая попытка — со следующей недели.",
         "uz": "❌ Test topshirilmadi: {ok}/{n}. Yangi urinish — keyingi haftadan.",
     },
+    # --- экзамен дня ---
+    "exam_intro": {
+        "ru": "🎓 <b>Экзамен дня</b>: {n} вопросов, нужно не менее {need}% верных.\n"
+              "Попытка одна в сутки. За сдачу — +{xp} XP. Удачи!",
+        "uz": "🎓 <b>Kun imtihoni</b>: {n} ta savol, kamida {need}% to'g'ri javob kerak.\n"
+              "Kuniga bitta urinish. Topshirsangiz — +{xp} XP. Omad!",
+    },
+    "exam_used": {
+        "ru": "Сегодняшний экзамен уже начат. Следующий — завтра.",
+        "uz": "Bugungi imtihon allaqachon boshlangan. Keyingisi — ertaga.",
+    },
+    "exam_few": {
+        "ru": "Для экзамена нужно хотя бы {min} слов. Получи слова дня: /today",
+        "uz": "Imtihon uchun kamida {min} ta so'z kerak. Kun so'zlari: /today",
+    },
+    "exam_passed": {
+        "ru": "🎓 Экзамен сдан: {ok}/{n}! +{xp} XP",
+        "uz": "🎓 Imtihon topshirildi: {ok}/{n}! +{xp} XP",
+    },
+    "exam_failed": {
+        "ru": "❌ Экзамен не сдан: {ok}/{n}. Повтори слова (/review) и приходи завтра.",
+        "uz": "❌ Imtihon topshirilmadi: {ok}/{n}. So'zlarni takrorlang (/review), ertaga qayting.",
+    },
     "bonus_text": {
         "ru": "💰 <b>Бонусы</b>\n\nУсловия на этой неделе:\n"
               "{ok_days} Активных дней: {days}/{need_days}\n"
@@ -345,11 +368,11 @@ TEXTS: dict[str, dict[str, str]] = {
     },
     "help": {
         "ru": "<b>WordDay</b> — новые английские слова каждый день (по {n} в день).\n\n"
-              "/today — слова дня\n/quiz — викторина\n/review — повторение\n"
+              "/today — слова дня\n/quiz — викторина\n/exam — экзамен дня\n/review — повторение\n"
               "/stats — статистика\n/streak — серия дней\n/theme — сменить тему\n"
               "/settings — настройки\n/help — эта справка",
         "uz": "<b>WordDay</b> — har kuni yangi inglizcha so'zlar (kuniga {n} tadan).\n\n"
-              "/today — kun so'zlari\n/quiz — viktorina\n/review — takrorlash\n"
+              "/today — kun so'zlari\n/quiz — viktorina\n/exam — kun imtihoni\n/review — takrorlash\n"
               "/stats — statistika\n/streak — kunlar seriyasi\n/theme — mavzuni almashtirish\n"
               "/settings — sozlamalar\n/help — shu yordam",
     },

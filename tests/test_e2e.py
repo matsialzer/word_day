@@ -89,7 +89,7 @@ async def test_same_phone_cannot_register_twice(h):
 
 
 async def test_commands_before_onboarding_ask_for_start(h):
-    for cmd in ("/today", "/quiz", "/review", "/stats", "/streak", "/bonus", "/weektest"):
+    for cmd in ("/today", "/quiz", "/review", "/stats", "/streak", "/bonus", "/weektest", "/exam"):
         h.fake.calls.clear()
         await h.send(STUDENT, cmd)
         assert any("/start" in t for t in h.fake.texts()), cmd
@@ -290,6 +290,34 @@ async def test_weektest_single_attempt_and_pass(h):
     h.fake.calls.clear()
     await h.send(STUDENT, "/weektest")  # вторая попытка на неделе
     assert any("уже использована" in t for t in h.fake.texts())
+
+
+async def test_exam_needs_words(h):
+    await make_student(h)
+    await h.send(STUDENT, "/exam")
+    assert any("хотя бы" in t for t in h.fake.texts())
+
+
+async def test_exam_single_attempt_per_day_and_xp(h):
+    await seed_words(h, n=10)
+    await make_student(h)
+    await h.send(STUDENT, "/today")
+    h.fake.calls.clear()
+    await h.send(STUDENT, "/exam")
+    assert any("Экзамен дня" in t for t in h.fake.texts())
+
+    while (data := await h.fsm_data(STUDENT)).get("exam") and data.get("question"):
+        q = data["question"]
+        await h.fsm_update(STUDENT, sent_at=time_mod.time() - 5)
+        if q["options"]:
+            await h.press(STUDENT, f"qz:{data['seq']}:{q['options'].index(q['answer'])}")
+        else:
+            await h.send(STUDENT, q["answer"])
+    assert any("Экзамен сдан" in t for t in h.fake.texts())
+
+    h.fake.calls.clear()
+    await h.send(STUDENT, "/exam")  # вторая попытка в тот же день
+    assert any("уже начат" in t for t in h.fake.texts())
 
 
 # ---------- админка ----------

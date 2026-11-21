@@ -22,6 +22,7 @@ log = logging.getLogger(__name__)
 COMMANDS = [
     BotCommand(command="today", description="Слова дня"),
     BotCommand(command="quiz", description="Викторина"),
+    BotCommand(command="exam", description="Экзамен дня"),
     BotCommand(command="review", description="Повторение"),
     BotCommand(command="stats", description="Статистика"),
     BotCommand(command="streak", description="Серия дней"),

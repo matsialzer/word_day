@@ -26,13 +26,18 @@ from worddays.bot.cards import delete_quietly, send_word_audio, send_word_photo
 from worddays.bot.rewards import reward_lines
 from worddays.bot.texts import t
 from worddays.config import get_settings
-from worddays.core.bonus import TEST_PASS_PCT, WEEKLY_TEST_MIN_WORDS
+from worddays.core.bonus import (
+    DAILY_EXAM_MIN_WORDS,
+    DAILY_EXAM_PASS_XP,
+    TEST_PASS_PCT,
+    WEEKLY_TEST_MIN_WORDS,
+)
 from worddays.core.quiz import Question
 from worddays.db.models import Language, User
+from worddays.repositories import daily_exams, weekly_tests
 from worddays.repositories import users as users_repo
-from worddays.repositories import weekly_tests
 from worddays.repositories import words as words_repo
-from worddays.services import gamification, stats, weekly_test
+from worddays.services import daily_exam, gamification, stats, weekly_test
 from worddays.services import quiz as quiz_svc
 from worddays.services import review as review_svc
 from worddays.services.daily_delivery import user_local_now
@@ -112,6 +117,16 @@ async def _ask_next(bot: Bot, session: AsyncSession, user: User, state: FSMConte
             if attempt:
                 key = "weektest_passed" if attempt.passed else "weektest_failed"
                 lines.append(t(lang, key, ok=attempt.correct, n=attempt.total))
+        if data.get("exam"):
+            attempt = await daily_exam.finish(
+                session, user, date.fromisoformat(data["exam"]), data["correct"]
+            )
+            if attempt:
+                if attempt.passed:
+                    lines.append(t(lang, "exam_passed", ok=attempt.correct, n=attempt.total,
+                                   xp=DAILY_EXAM_PASS_XP))
+                else:
+                    lines.append(t(lang, "exam_failed", ok=attempt.correct, n=attempt.total))
         await bot.send_message(user.telegram_id, "\n".join(lines))
         await state.clear()
         return
@@ -147,13 +162,28 @@ async def _ask_next(bot: Bot, session: AsyncSession, user: User, state: FSMConte
 
 
 async def _start_quiz(
-    bot: Bot, session: AsyncSession, user: User, state: FSMContext, weekly: bool = False
+    bot: Bot, session: AsyncSession, user: User, state: FSMContext, weekly: bool = False,
+    exam: bool = False,
 ) -> None:
-    """Запустить обычную викторину или (weekly=True) недельный тест - одна попытка в неделю."""
+    """Запустить викторину, недельный тест (одна попытка в неделю) или экзамен дня
+    (одна попытка в сутки)."""
     lang, chat_id = user.language, user.telegram_id
     await state.clear()
     monday: date | None = None
-    if weekly:
+    exam_day: date | None = None
+    if exam:
+        exam_day = user_local_now(user, datetime.now(UTC)).date()
+        if await daily_exams.get(session, user.id, exam_day) is not None:
+            await bot.send_message(chat_id, t(lang, "exam_used"))
+            return
+        pairs = await daily_exam.pick_exam_words(session, user, exam_day)
+        if not pairs:
+            await bot.send_message(chat_id, t(lang, "exam_few", min=DAILY_EXAM_MIN_WORDS))
+            return
+        await daily_exam.start(session, user, exam_day, len(pairs))
+        await bot.send_message(chat_id, t(lang, "exam_intro", n=len(pairs), need=TEST_PASS_PCT,
+                                          xp=DAILY_EXAM_PASS_XP))
+    elif weekly:
         monday = stats.week_monday(user_local_now(user, datetime.now(UTC)).date())
         if await weekly_tests.get(session, user.id, monday) is not None:
             await bot.send_message(chat_id, t(lang, "weektest_used"))
@@ -176,6 +206,7 @@ async def _start_quiz(
     await state.update_data(
         queue=[w.id for _, w in pairs], pos=0, correct=0, seq=0,
         weekly=monday.isoformat() if monday else None,
+        exam=exam_day.isoformat() if exam_day else None,
     )
     await _ask_next(bot, session, user, state)
 
@@ -227,6 +258,30 @@ async def cmd_quiz(message: Message, bot: Bot, session: AsyncSession, state: FSM
         await message.answer(t(Language.RU, "not_onboarded"))
         return
     await _start_quiz(bot, session, user, state)
+
+
+@router.message(Command("exam"))
+async def cmd_exam(message: Message, bot: Bot, session: AsyncSession, state: FSMContext) -> None:
+    if message.from_user is None:
+        return
+    user = await _active_user(session, message.from_user.id)
+    if user is None:
+        await message.answer(t(Language.RU, "not_onboarded"))
+        return
+    await _start_quiz(bot, session, user, state, exam=True)
+
+
+@router.callback_query(F.data == "qz:exam")
+async def exam_start(
+    cb: CallbackQuery, bot: Bot, session: AsyncSession, state: FSMContext
+) -> None:
+    await cb.answer()
+    user = await _active_user(session, cb.from_user.id)
+    if user is None:
+        return
+    if isinstance(cb.message, Message):
+        await cb.message.edit_reply_markup(reply_markup=None)  # кнопка одноразовая
+    await _start_quiz(bot, session, user, state, exam=True)
 
 
 @router.message(Command("weektest"))
